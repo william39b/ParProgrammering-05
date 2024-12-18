@@ -15,7 +15,7 @@ namespace ParProgrammering_05
 
         public Wizard Wizard { get; set; }
 
-        private string[] _wands = { "føniksstav", "unikornstav", "trollstav" };
+        private string[] _wands = { "Phoenix Wand", "Unicorn Wand", "Wand of Troll" };
         private string[] _pets = { "Cat", "Owl", "Rat" };
 
 
