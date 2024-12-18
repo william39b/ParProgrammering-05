@@ -19,7 +19,28 @@ namespace ParProgrammering_05
         public string House { get; set; }
         public string[] Inventory { get; set; }
 
-        private string[] _houses = { "Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin" }
+        private string[] _houses = { "Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin" };
+
+
+        public void CreateWizard(Wizard person)
+        {
+            Console.WriteLine("What is the name of your new Wizard?");
+            Console.Write("Name: ");
+            var name = Console.ReadLine();
+            person.Name = name;
+            person.House = RandomHouse();
+            Console.WriteLine($"\nWellcome to Hogwarts {person.Name}");
+            Console.WriteLine("Your new house is...");
+            Thread.Sleep(2000);
+            Console.WriteLine($"{person.House}!");
+            Console.ReadKey();
+        }
+
+        public string RandomHouse()
+        {
+            Random random = new Random();
+            return _houses[random.Next(4)];
+        }
 
         public void WizardInfo()
         {
@@ -29,13 +50,6 @@ namespace ParProgrammering_05
                 $"Wand:  {Inventory[0]}\n" +
                 $"Pet:   {Inventory[1]}\n");
         }
-        public void CreateWizard(Wizard person)
-        {
-            Console.WriteLine("What is the name of the new Wizard?");
-            var name = Console.ReadLine();
-            person.Name = name;
-            random
-            
-        }
+        
     }
 }
