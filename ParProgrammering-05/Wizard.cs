@@ -49,6 +49,8 @@ namespace ParProgrammering_05
                 $"House: {House}\n" +
                 $"Wand:  {Inventory[0]}\n" +
                 $"Pet:   {Inventory[1]}\n");
+            Console.Write("Press ENTER to continue: ");
+            Console.ReadKey();
         }
         
     }

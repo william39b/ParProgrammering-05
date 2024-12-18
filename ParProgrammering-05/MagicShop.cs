@@ -22,7 +22,7 @@ namespace ParProgrammering_05
         public void Shop()
         {
             Console.WriteLine("What do you want to buy?");
-            Console.WriteLine("[1] Wand \n[2] Pet\n");
+            Console.WriteLine("[1] Wand \n[2] Pet\n[3] Leave store");
             var input = Console.ReadLine();
             switch(input)
             {
@@ -31,6 +31,8 @@ namespace ParProgrammering_05
                     break;
                 case "2":
                     Pets();
+                    break;
+                case "3":
                     break;
             }
 
@@ -44,6 +46,7 @@ namespace ParProgrammering_05
             }
             var newWand = Convert.ToInt32(Console.ReadLine()) - 1;
             Wizard.Inventory[0] = _wands[newWand];
+            Shop();
         }
 
         public void Pets()
@@ -54,6 +57,7 @@ namespace ParProgrammering_05
             }
             var newPet = Convert.ToInt32(Console.ReadLine()) - 1;
             Wizard.Inventory[1] = _pets[newPet];
+            Shop();
         }
 
 
