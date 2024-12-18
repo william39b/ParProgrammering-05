@@ -19,6 +19,7 @@ namespace ParProgrammering_05
         public string House { get; set; }
         public string[] Inventory { get; set; }
 
+        private string[] _houses = { "Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin" }
 
         public void WizardInfo()
         {
@@ -27,6 +28,12 @@ namespace ParProgrammering_05
                 $"House: {House}\n" +
                 $"Wand:  {Inventory[0]}\n" +
                 $"Pet:   {Inventory[1]}\n");
+        }
+        public void CreateWizard(Person person)
+        {
+            Console.WriteLine("What is the name of the new Wizard?");
+            var name = Console.ReadLine();
+            
         }
     }
 }
