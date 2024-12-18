@@ -11,6 +11,10 @@ Trylleformler:
 vingardium leviosa (får en fjær til å fly)
 hokus pokus (fyrer av fyrverkerier)
 */
+using ParProgrammering_05;
+
+var person = new Wizard("Harry Potter", "Gryffindor");
+var shop = new MagicShop(person);
 
 while (true)
 {
@@ -25,8 +29,10 @@ while (true)
     switch (input)
     {
         case "1":
+            person.WizardInfo();
             break;
         case "2":
+            shop.Shop();
             break;
         case "3":
             break;
