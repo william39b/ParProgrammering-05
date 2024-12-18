@@ -29,7 +29,7 @@ namespace ParProgrammering_05
                 $"Wand:  {Inventory[0]}\n" +
                 $"Pet:   {Inventory[1]}\n");
         }
-        public void CreateWizard(Person person)
+        public void CreateWizard(Wizard person)
         {
             Console.WriteLine("What is the name of the new Wizard?");
             var name = Console.ReadLine();

@@ -37,6 +37,7 @@ while (true)
         case "3":
             break;
         case "4":
+            person.CreateWizard(person);
             break;
         case "5":
             break;
