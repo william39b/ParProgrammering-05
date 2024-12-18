@@ -1,5 +1,5 @@
 # ParProgrammering-05
-1) Harry Pottah🥳l33t haxx0r
+Harry Pottah🥳l33t haxx0r
 Du skal starte med å lage en harrypotter character klasse med egenskaper som navn, house, inventory (ex wand eller pet)
 Få applikasjonen til å printe ut en introduksjon for karakteren, som sier noe om hva de heter, hvilket hus de er medlem av og hvilke items de har
 
