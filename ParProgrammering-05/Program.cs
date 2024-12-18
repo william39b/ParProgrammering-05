@@ -19,10 +19,10 @@ var shop = new MagicShop(person);
 while (true)
 {
     Console.WriteLine(
-        $"[1] Wizzard info\n" +
+        $"[1] Wizard info\n" +
         $"[2] Go to Magic store\n" +
         $"[3] Cast a spell\n" +
-        $"[4] Create a new Wizzard\n" +
+        $"[4] Create a new Wizard\n" +
         $"[5] Quit\n");
     var input = Console.ReadLine();
 
@@ -40,6 +40,7 @@ while (true)
             person.CreateWizard(person);
             break;
         case "5":
+            Environment.Exit(0);
             break;
     }
 }
