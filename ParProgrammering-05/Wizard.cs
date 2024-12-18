@@ -33,6 +33,8 @@ namespace ParProgrammering_05
         {
             Console.WriteLine("What is the name of the new Wizard?");
             var name = Console.ReadLine();
+            person.Name = name;
+            random
             
         }
     }
